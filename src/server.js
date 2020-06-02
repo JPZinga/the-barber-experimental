@@ -2,11 +2,11 @@
 require('dotenv').config();
 
 const express = require("express");
-const app = express();
 const database = require("./database");
+const routes = require("./routes");
 
 database.connect();
-
-app.get("/", (req, res) => { res.send("Hello word") });
+const app = express();
+app.use(routes);
 
 app.listen(process.env.PORT, () => console.log(`Servidor inicializado na porta ${process.env.PORT}`) );

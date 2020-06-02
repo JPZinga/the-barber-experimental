@@ -7,6 +7,6 @@ const UserTypeShema = mongoose.Schema({
   creationDate: { type: Date, default: Date.now() },
 })
 
-const UserType = mongoose.Model("UserType", UserTypeShema);
+const UserType = mongoose.model("UserType", UserTypeShema);
 
 module.exports = UserType;

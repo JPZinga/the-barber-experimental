@@ -10,7 +10,7 @@ const UserSchema = new mongosse.Schema({
   },
   
   userType: { 
-    type: Schema.Types.ObjectId, 
+    type: mongosse.Schema.Types.ObjectId, 
     ref: "UserType" 
   },
   
@@ -41,6 +41,6 @@ UserSchema.pre("save", async function(next){
   next();
 });
 
-const User = mongosse.Model("User", UserSchema);
+const User = mongosse.model("User", UserSchema);
 
 module.exports = User;
