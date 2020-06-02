@@ -1,6 +1,6 @@
 
 const mongosse = require("mongoose");
-const bcrypt = require("bcryptjs");
+//const bcrypt = require("bcryptjs");
 
 const UserSchema = new mongosse.Schema({
 
@@ -8,12 +8,11 @@ const UserSchema = new mongosse.Schema({
     type: String,
     required: true,
   },
-  
+  /*  
   userType: { 
     type: mongosse.Schema.Types.ObjectId, 
     ref: "UserType" 
   },
-  
   email: {
     type: String,
     unique: true,
@@ -31,15 +30,17 @@ const UserSchema = new mongosse.Schema({
     type: Date, 
     default: Date.now(), 
   },
-
+  */
 });
 
+/*
 UserSchema.pre("save", async function(next){
   const hash = await bcrypt.hash(this.password, 13);
   this.password = hash;
 
   next();
 });
+*/
 
 const User = mongosse.model("User", UserSchema);
 

@@ -1,13 +1,12 @@
 
 require('dotenv').config();
 
-const {MongoClient} = require('mongodb');
-const client = new MongoClient(process.env.MONGO_URI, { useUnifiedTopology: true, useNewUrlParser: true});
+const mongoose = require("mongoose");
 
 const dataBase = {
   async connect(){
     try {
-      await client.connect().then(() => {
+      await mongoose.connect( process.env.MONGO_URI, { useUnifiedTopology: true, useNewUrlParser: true}).then(() => {
         console.error(`Conexão com o banco de dados efectuada com sucesso!`)
       });
     }
