@@ -1,0 +1,23 @@
+{
+  "name": "the-barber-backend",
+  "version": "1.0.0",
+  "description": "API para aplicação The Barber",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon ./src/server.js"    
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JPZinga/the-barber-backend.git"
+  },
+  "author": "João Paulo Zinga",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JPZinga/the-barber-backend/issues"
+  },
+  "homepage": "https://github.com/JPZinga/the-barber-backend#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "nodemon": "^2.0.4"
+  }
+}

@@ -1,0 +1,54 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Program Files (x86)\Yarn\bin\yarn.js add express,nodemon
+
+PATH: 
+  C:\Python27\;C:\Python27\Scripts;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\windows\System32\OpenSSH\;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;C:\Program Files (x86)\Yarn\bin\;C:\Program Files\RedHat\java-1.8.0-openjdk-1.8.0.242-3\bin;C:\Program Files\RedHat\java-1.8.0-openjdk-1.8.0.242-3\jre\bin;C:\Android\Sdk\emulator;C:\Android\Sdk\tools;C:\Android\Sdk\tools\bin;C:\Android\Sdk\platform-tools;C:\Users\PC\AppData\Local\Programs\Python\Python38-32\Scripts\;C:\Users\PC\AppData\Local\Programs\Python\Python38-32\;C:\Users\PC\AppData\Local\Microsoft\WindowsApps;C:\Users\PC\AppData\Roaming\npm;C:\Users\PC\AppData\Local\Yarn\bin;C:\Program Files\RedHat\java-1.8.0-openjdk-1.8.0.242-3;C:\Program Files\RedHat\java-1.8.0-openjdk-1.8.0.242-3\bin;C:\Android\Sdk\emulator;C:\Android\Sdk\tools;C:\Android\Sdk\tools\bin;C:\Android\Sdk\platform-tools;C:\Users\PC\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files\MySQL\MySQL Workbench 8.0 CE;C:\Users\PC\AppData\Roaming\Python\Scripts;c:\users\pc\appdata\roaming\python\python27\site-packages;C:\Program Files\PostgreSQL\10\bin;
+
+Yarn version: 
+  1.21.1
+
+Node version: 
+  12.14.1
+
+Platform: 
+  win32 x64
+
+Trace: 
+  Error: https://registry.yarnpkg.com/express,nodemon: Not found
+      at Request.params.callback [as _callback] (C:\Program Files (x86)\Yarn\lib\cli.js:66056:18)
+      at Request.self.callback (C:\Program Files (x86)\Yarn\lib\cli.js:140665:22)
+      at Request.emit (events.js:223:5)
+      at Request.<anonymous> (C:\Program Files (x86)\Yarn\lib\cli.js:141637:10)
+      at Request.emit (events.js:223:5)
+      at IncomingMessage.<anonymous> (C:\Program Files (x86)\Yarn\lib\cli.js:141559:12)
+      at Object.onceWrapper (events.js:312:28)
+      at IncomingMessage.emit (events.js:228:7)
+      at endReadableNT (_stream_readable.js:1185:12)
+      at processTicksAndRejections (internal/process/task_queues.js:81:21)
+
+npm manifest: 
+  {
+    "name": "the-barber-backend",
+    "version": "1.0.0",
+    "description": "API para aplicação The Barber",
+    "main": "index.js",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/JPZinga/the-barber-backend.git"
+    },
+    "author": "João Paulo Zinga",
+    "license": "ISC",
+    "bugs": {
+      "url": "https://github.com/JPZinga/the-barber-backend/issues"
+    },
+    "homepage": "https://github.com/JPZinga/the-barber-backend#readme"
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
